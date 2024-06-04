@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<boby>
+ <header>         
+    <nav>
+        <table width="100%">
+        <tr align="center">
+            <b><td colspan="2" width="20%">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo" width="150px" height="60px">
+                <span class="text-after-image">HOME</span>
+            </a>
+            </td>
+            <td><a href="#service">FIND DONOR</a></td>
+            <td><a href="aboutus.html">ABOUT US </a></td>
+            <td><a href="#footer">CONTACT US</a></td>
+            <td><a href="index.html">LOGIN</a></td></b>
+        </tr>
+        </table>                  
+    </nav>
+    <section class="section hero" id="home">
+      <div class="form-container" background:red>
+        <div class="form-title">REGISTER HERE</div>
+        <form action="process.php" method="POST">
+          <div class="form-section">
+            <div class="form-field">
+              <label for="full-name">FULL NAME</label>
+              <input type="text" id="regsitername" name="regsitername" required>
+            </div>
+            <div class="form-field">
+              <label for="mobile">MOBILE NUMBER</label>
+              <input type="text" id="registernumber" name="registernumber" required>
+            </div>
+            <div class="form-field">
+              <label for="email">EMAIL</label>
+              <input type="email" id="registeremail" name="registeremail" required>
+            </div>
+            <div class="form-field">
+              <label for="password">PASSWORD</label>
+              <input type="password" id="registerpassword" name="registerpassword" required>
+            </div>
+          </div>
+          <div class="form-section">
+            <div class="form-field">
+              <label for="blood-group">BLOOD GROUP</label>
+              <select id="registerbloodgroup" name="registerbloodgroup" required>
+                <option value="" disabled selected>Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="birth-date">BIRTH DATE</label>
+              <input type="date" id="registerbirthdate" name="registerbirthdate" required>
+            </div>
+            <div class="form-field">
+              <label for="gender">GENDER</label>
+              <select id="registergender" name="registergender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="weight">WEIGHT</label>
+              <input type="text" id="registerweight" name="registerweight" required>
+            </div>
+          </div>
+          <div class="form-section">
+            <div class="form-field">
+              <label for="state">STATE</label>
+              <input type="text" id="registerweight" name="registerweight" required>
+            </div>
+            <div class="form-field">
+              <label for="district">DISTRICT</label>
+              <input type="text" id="registerdistrict" name="registerdistrict" required>
+            </div>
+            <div class="form-field">
+              <label for="zip-code">ZIP CODE</label>
+              <input type="text" id="registerzipcode" name="registerzipcode" required>
+            </div>
+            <div class="form-field">
+              <label for="area">AREA</label>
+              <input type="text" id="registerarea" name="registerarea" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="area">Landmarks</label>
+            <input type="text" id="registerlandmarks" name="registerlandmarks" required>
+          </div>
+          <button type="submit" name="submit" class="btn">Register</button>
+        </form>
+      </div>
+    </section>
+    </header>
+    <hr style="color: #11ABB0;">
+  <div class="section-service" id="service" aria-label="service">
+    <div class="form">  
+      <form method="post" class="donor-form" action="finddonor.php" >
+        <h2 class="formhead">FIND DONOR FOR YOU</h2>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="blood-type">Blood Type:</label>
+          <select id="blood-type" name="bloodtype">
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required>
+        </div>
+        <div class="form-group">
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" required>
+        </div>
+        <button type="submit" name="submit" class="btn">Find Donor</button>
+      </form>
+    </div>
+    <div class="form">
+      <img src="hero-banner.png" width="500px" height="560px" align="right">
+    </div>
+  </div>
+    <hr style="color: #11ABB0;">
+      <footer class="footer" id="footer">
+        <div class="footer-top section">
+          <div class="container">
+            <div class="footer-brand">
+              <a href="#" class="logo">Blood Connect</a>
+              <p class="footer-text">
+                We are passionate about connecting blood donors with recipients and bridging the gap in the healthcare industry. 
+                We strive to create a community that fosters empathy, support, and solidarity among individuals who are committed to making a difference.
+              </p>
+              <div class="schedule">
+                <div class="schedule-icon">
+                  <ion-icon name="time-outline"></ion-icon>
+                </div>
+                <span class="span">
+                  24 X 7:<br>
+                  365 Days
+                </span>
+              </div>
+            </div>
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Other Links</p>
+              </li>
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="add-outline"></ion-icon>
+                  <span class="span">HOME</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="add-outline"></ion-icon>
+                  <span class="span">FIND DONAR</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="add-outline"></ion-icon>
+                  <span class="span">ABOUT</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="add-outline"></ion-icon>
+                  <span class="span">CONTACT</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="add-outline"></ion-icon>
+                  <span class="span">REGISTER</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Contact Us</p>
+              </li>
+              <li class="footer-item">
+                <div class="item-icon">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
+                <a href="https://maps.app.goo.gl/7PnC9PQWEEJTGGrD6">
+                <address class="item-text">
+                  Near Srinivasa Nagar,<br>
+                  Tirupati, Andhra Pradesh 517501
+                </address>
+              </a>
+              </li>
+              <li class="footer-item">
+                <div class="item-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+                <a href="tel:+911234567890" class="footer-link">+91-1234-567-890</a>
+              </li>
+              <li class="footer-item">
+                <div class="item-icon">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+                <a href="mailto:help@example.com" class="footer-link">bloodconnect@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <p class="copyright">
+              &copy; 2024 All Rights Reserved by Red Stream
+            </p>
+            <ul class="social-list">
+              <li>
+                <a href="" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</boby>
+</html>
